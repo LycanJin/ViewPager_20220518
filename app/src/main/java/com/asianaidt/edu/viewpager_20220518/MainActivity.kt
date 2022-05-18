@@ -15,11 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         setupEvents()
         setupValues()
-
     }
 
     fun setupEvents() {
-
 
     }
 
@@ -29,5 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         // 재사용성 억제 (메모리 죽는것 방지?)
         mainViewPager.offscreenPageLimit = 3
+
+        // TabLayout 과 ViewPager 연결
+        tab_layout.setupWithViewPager(mainViewPager)
     }
 }

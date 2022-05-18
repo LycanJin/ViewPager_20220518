@@ -23,4 +23,15 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
         }
     }
 
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        // 각 페이지별 제목 설정
+
+        return when(position) {
+            0 -> "이름"
+            1 -> "폰"
+            else -> "헬로"
+        }
+    }
+
 }
