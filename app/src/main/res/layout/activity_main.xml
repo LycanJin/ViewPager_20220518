@@ -9,6 +9,10 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/black"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/teal_700"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
